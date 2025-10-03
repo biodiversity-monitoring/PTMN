@@ -1,0 +1,93 @@
+#' Forest Woody Invader Functional Traits Dataset
+#'
+#' @description
+#' A comprehensive functional trait dataset comparing native and invasive woody species
+#' in North American deciduous forests. This dataset includes 76 species (44 native,
+#' 32 non-native) with 68 continuous functional traits across leaf, stem, root, and
+#' whole-plant characteristics. The data has been processed using probabilistic PCA
+#' (PPCA) for missing value imputation and includes log-transformed variables for
+#' right-skewed distributions.
+#'
+#' @format A data frame with 76 rows (species) and 73 columns:
+#' \describe{
+#'   \item{spesies}{Species name (character)}
+#'   \item{family}{Taxonomic family (character)}
+#'   \item{growthform}{Growth form classification: shrub, tree, or vine (character)}
+#'   \item{nativity}{Binary coding: 0 = native, 1 = non-native (numeric)}
+#'   \item{status}{Invasion status: "native", "naturalized", or "invasive" (character)}
+#'   \item{Mass_leaf}{Leaf dry mass (standardized, log-transformed)}
+#'   \item{SLA}{Specific leaf area (standardized)}
+#'   \item{LDMC}{Leaf dry matter content (standardized)}
+#'   \item{Lobe}{Leaf shape complexity (standardized, log-transformed)}
+#'   \item{PA_leaf}{Leaf perimeter-area ratio (standardized, log-transformed)}
+#'   \item{Thick_leaf}{Leaf thickness (standardized, log-transformed)}
+#'   \item{Stomate_size}{Stomatal guard cell length (standardized)}
+#'   \item{Stomate_index}{Stomatal density index (standardized, log-transformed)}
+#'   \item{Rd_area, Rd_mass}{Leaf dark respiration per area and mass (standardized, log-transformed)}
+#'   \item{Asat_area, Asat_mass}{Light-saturated photosynthetic rate per area and mass (standardized, log-transformed)}
+#'   \item{Vc_max}{Maximum carboxylation rate (standardized, log-transformed)}
+#'   \item{J_max}{Maximum electron transport rate (standardized, log-transformed)}
+#'   \item{AQY}{Apparent quantum yield (standardized, log-transformed)}
+#'   \item{LSP}{Light saturation point (standardized, log-transformed)}
+#'   \item{PNUE}{Photosynthetic nitrogen use efficiency (standardized, log-transformed)}
+#'   \item{WUE}{Water use efficiency (standardized, log-transformed)}
+#'   \item{CC_area, CC_mass}{Leaf construction cost per area and mass (standardized, log-transformed)}
+#'   \item{N_mass, N_area, N_litter}{Leaf nitrogen content (standardized, log-transformed)}
+#'   \item{N_res}{Nitrogen resorption efficiency (standardized)}
+#'   \item{C_mass, C_area, C_litter}{Leaf carbon content (standardized, log-transformed)}
+#'   \item{Solubles, Hemi, Lignin, Cellulose}{Leaf chemical composition (standardized, log-transformed)}
+#'   \item{Ash}{Leaf ash content (standardized, log-transformed)}
+#'   \item{Phenolics}{Leaf phenolic content (standardized, log-transformed)}
+#'   \item{Chl_area, Chl_mass}{Chlorophyll content per area and mass (standardized, log-transformed)}
+#'   \item{Chl_ab}{Chlorophyll a:b ratio (standardized, log-transformed)}
+#'   \item{Decomp_leaf}{Leaf decomposition rate (standardized, log-transformed)}
+#'   \item{DNA}{Nuclear DNA content (standardized, log-transformed)}
+#'   \item{SRL}{Specific root length (standardized, log-transformed)}
+#'   \item{RTD, RDMC}{Root tissue density and dry matter content (standardized, log-transformed)}
+#'   \item{N_root, C_root}{Root nitrogen and carbon content (standardized, log-transformed)}
+#'   \item{Lignin_root}{Root lignin content (standardized, log-transformed)}
+#'   \item{Decomp_root}{Root decomposition rate (standardized, log-transformed)}
+#'   \item{LAgain}{Annual leaf area gain (standardized, log-transformed)}
+#'   \item{LeafRate_max}{Maximum leaf production rate (standardized, log-transformed)}
+#'   \item{NPP_root}{Annual root production (standardized, log-transformed)}
+#'   \item{SS_root, SS_stem}{Soluble sugar content in roots and stems (standardized, log-transformed)}
+#'   \item{Starch_root, Starch_stem}{Starch content in roots and stems (standardized, log-transformed)}
+#'   \item{NSC_root, NSC_stem}{Non-structural carbohydrate content (standardized, log-transformed)}
+#'   \item{Vessel_freq}{Xylem vessel frequency (standardized, log-transformed)}
+#'   \item{Metaxylem_diam, Earlywood_diam, Latewood_diam}{Xylem vessel diameters (standardized, log-transformed)}
+#'   \item{Cond_stem}{Stem hydraulic conductance (standardized, log-transformed)}
+#'   \item{LeafFall50}{Median date of 50% leaf senescence (standardized)}
+#'   \item{Lifespan_leaf}{Mean leaf lifespan (standardized, log-transformed)}
+#'   \item{EmergeDuration}{Duration of spring leaf emergence (standardized)}
+#'   \item{LeafDuration}{Annual duration of live leaves (standardized, log-transformed)}
+#'   \item{LeafTurnover}{Annual leaf turnover rate (standardized)}
+#'   \item{FallDuration}{Duration of autumn senescence (standardized)}
+#'   \item{Chl_sun50, Chl_shade50}{Date of 50% chlorophyll loss in sun/shade leaves (standardized)}
+#'   \item{LeafOut}{Date of spring leaf emergence (standardized)}
+#' }
+#'
+#' @details
+#' This dataset represents measurements from a common garden experiment conducted at
+#' Syracuse University from 2006-2018. All continuous traits have been standardized
+#' to zero mean and unit variance, with 37 right-skewed traits log-transformed prior
+#' to standardization. Missing values (29% of the original dataset) were imputed using
+#' probabilistic PCA with 2 principal components.
+#'
+#' The study identified a unique "fast but steady" trait syndrome in invasive species,
+#' combining high metabolic rates with extended leaf duration and robust leaf construction.
+#' Two traits - annual leaf duration and nuclear DNA content - distinguished native
+#' from invasive species with 93% accuracy.
+#'
+#' @source
+#' Common garden experiment, Syracuse University, New York (43°39'N, 76°99'W).
+#' Species grown under 20% light transmittance shade cloth simulating forest understory
+#' conditions.
+#'
+#' @references
+#' Fridley, J. D., Bauerle, T. L., Craddock, A., Ebert, A. R., Frank, D. A., Heberling, J. M., Hinman, E. D., Jo, I., Martinez, K. A., Smith, M. S., Woolhiser, L. J., & Yin, J. (2022). Fast but steady: An integrated leaf‐stem‐root trait syndrome for woody forest invaders. Ecology Letters, 25(4), 900-912.
+#' \url{ https://doi.org/10.1111/ele.13967 }
+#'
+#' @examples
+#' data(forest_invader_traits)
+#' head(forest_invader_traits)
+"forest_invader_traits"

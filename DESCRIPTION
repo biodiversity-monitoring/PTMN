@@ -1,0 +1,25 @@
+Package: PTMN
+Type: Package
+Title: Analyzing and Visualizing Plant Trait Multilayer Networks
+Version: 0.1.0
+Date: 2025-10-3
+Authors@R: c(person("Yan", "He", email = "heyan@njfu.edu.cn", role = c("aut", "cre")),person("Yu", "Xia", role = "aut"),person("Zhaogang", "Liu", role = "aut"),person("Rui", "Yang", role = "aut"),person("Jiangshan", "Lai", role = "aut"),person("Lingfeng", "Mao", role = "aut"))
+Maintainer: Yan He <heyan@njfu.edu.cn>
+Description: Implements analytical and visualization methods for Plant Trait Multilayer Networks, a framework integrating multilayer network theory with plant trait analysis to quantify coordinated adaptations across organs and functional systems. Provides functions for constructing PTMNs, analyzing cross-layer trait relationships, computing network metrics, and visualizing multidimensional plant adaptation patterns. Methods are based on He et al. (2020) <doi:10.1016/j.tree.2020.06.003>.
+Imports: igraph,Hmisc,ape,stats,paletteer,scales
+Depends: R (>= 4.0.0)
+Suggests: testthat (>= 3.0.0),devtools
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-10-03 07:06:33 UTC; Administrator
+Author: Yan He [aut, cre],
+  Yu Xia [aut],
+  Zhaogang Liu [aut],
+  Rui Yang [aut],
+  Jiangshan Lai [aut],
+  Lingfeng Mao [aut]
