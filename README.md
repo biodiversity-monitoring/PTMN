@@ -1,3 +1,5 @@
+# PTMN
+
 PTMN is an R package designed for constructing, visualizing, and analyzing Plant Trait Multilayer Networks (PTMNs). PTMNs integrate plant functional trait data across multiple organs or systems into a unified multilayer framework, enabling researchers to capture both intralayer and interlayer interactions with high ecological relevance. The package supports the collection of multilayer trait data, correlation-based edge filtering, and network assembly into extended edge lists for analysis. It provides functions to compute key topological parameters such as interlayer edge density, clustering, and path lengths, helping identify hub traits and cross-layer functional modules. By revealing complex trait coordination in plants, PTMN offers a robust tool for exploring plant adaptation strategies and predicting biodiversity dynamics under environmental change.
 
 ## Installation
