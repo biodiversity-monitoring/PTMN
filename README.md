@@ -11,6 +11,14 @@ if (!requireNamespace("devtools", quietly = TRUE)) {install.packages("devtools")
 devtools::install_github("biodiversity-monitoring/PTMN")
 ```
 
+## Main Functions
+
+| Function         | Description                                                                                                                                                                                                                                                                                                                      |
+|----------------|--------------------------------------------------|
+| `PTMN()`         | Constructs a phylogenetic trait multilayer network where nodes represent traits organized into layers (e.g., organs or functional systems) and edges represent significant correlations. Supports correlation thresholding, p-value filtering, FDR correction, and optional phylogenetic correction using independent contrasts. |
+| `PTMN_metrics()` | Calculates node-level and global network metrics for PTMNs, identifying hub traits and cross-layer modules. Metrics include interlayer degree, closeness, clustering coefficient, edge density, path length, and modular association.                                                                                            |
+| `PTMN_plot()`    | Visualizes PTMNs with options for standard and circular layouts, customizable node and edge aesthetics, and layer/module highlighting. Differentiates intralayer edges (black) from interlayer edges (red).                                                                                                                      |
+
 ## Example
 
 ```{r,class.source = 'fold-show'}
