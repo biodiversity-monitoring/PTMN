@@ -53,5 +53,5 @@ graph <- PTMN(traits, layers_list = layers, method = "pearson", phylo_correction
 PTMN_metrics(graph)
 PTMN_plot(graph, style = "default", vertex_size = 8,
           vertex_label_cex = 0.5, edge_width = 2,
-          show_legend = FALSE)
+          show_legend = TRUE)
 ```
